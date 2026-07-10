@@ -1,0 +1,42 @@
+Runtime Polymorphism:-
+-----------------------
+			 Person(void getBehave()---Human Behaviour)
+			   |
+ ----------------------------------------------------------------
+  |	   	    |			 |			|
+School	 	   Org		      PublicPlace	      Home
+getResult()     getSalary()	      getPublicEventInfo()    getMoviewOnTime()
+  |	   	    |			 |			|
+getBehave()	getBehave()	      getBehave()	    getBehave() <=== Method Overridding	
+  |	   	    |			 |			|
+Student		 Employee             Citizen                 Child
+
+
+Person person = null;
+
+	School school = new Person();// C.E
+------------------------------------------------------
+	// Upcasting(Parent reference = Child Object)
+	person = new School();
+	person.getBehave();//Student Behaviour
+
+	person.getResult();//C.E
+
+------------------------------------------------------
+	person = new Org();
+	person.getBehave();//Employee Behaviour
+------------------------------------------------------
+	person = new PublicPlace();
+	person.getBehave();//Citizen Behaviour
+------------------------------------------------------
+	person = new Home();
+	person.getBehave();//Child Behaviour
+------------------------------------------------------
+
+	
+
+
+
+
+			
+				

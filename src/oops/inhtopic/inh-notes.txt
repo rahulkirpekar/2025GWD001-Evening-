@@ -1,0 +1,56 @@
+Inheritance:- Code Reusubility
+---------------
+
+	class--A<---------------->class--B
+
+	A(parent/super/Base)
+	|
+	B(Child/Derived/Sub)
+-------------------------------------------------------------------------------------------
+
+			Type of Relation
+			------------------
+	1. IS-A Relation		2. HAS-A Relation
+	-----------------		-----------------
+		|				|
+	  Inheritance    		    Aggregation	
+
+				Type of Inheritance
+				--------------------
+
+Interface(5 type inheritance)
+
+By Java Class:-
+-------------------
+	1. Single	
+
+			Person IS-A Student
+
+			Student IS-A Person(100%)
+
+		Person(name)
+		  |
+		Student(id,std,marks)
+
+
+
+	2. Multilevel
+
+	3. Hierarchical
+------------------------------
+
+	4. Multiple
+
+	5. Hybrid
+
+
+
+
+
+
+
+
+
+
+
+

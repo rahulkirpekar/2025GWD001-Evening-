@@ -1,0 +1,51 @@
+OOPs features:-
+-----------------
+	1. class
+	2. object
+	3. encapsulation
+	4. inheritance
+	5. polymorphism
+		|
+	6. abstraction
+
+
+
+
+Abstraction:-
+--------------
+
+	1. 0% to 100%			2. 100%
+	---------------			---------------
+	Abstract class			interface
+
+Abstract class:-
+-----------------
+	1. Data Members
+	2. constructor
+	3. Member Function
+		1. abstract Methods
+
+		public abstract void test1();
+
+		2. non-abstract Methods
+		void test2()
+		{
+			operation part
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

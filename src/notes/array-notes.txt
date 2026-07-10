@@ -1,0 +1,6 @@
+Array:-
+--------
+
+	char name[] = new char[50];// name[0],...name[49]	
+	float b[] = new float[10];// b[0],...b[9]
+	int a[] = new int[5];// a[0],a[1],a[2],a[3],a[4]
