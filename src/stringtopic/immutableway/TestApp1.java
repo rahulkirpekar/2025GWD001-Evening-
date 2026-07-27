@@ -5,7 +5,6 @@ public class TestApp1
 	public static void main(String[] args) 
 	{
 /*
-			
 		String name1 = "royal";
 		String name2 = "royal";
 		String name3 = "technosoft";
@@ -86,8 +85,6 @@ public class TestApp1
 				System.out.println("name9==name10 : " + (name9==name10));//false	    
 				System.out.println("name9==name11 : " + (name9==name11));//false	    
 				System.out.println("name10==name11 : "+ (name10==name11) );//false	    
-
-				
 				
 				System.out.println("2. valueBased(.equals()) : ");                         
 				System.out.println("----------------------------");                         
@@ -97,7 +94,5 @@ public class TestApp1
 				System.out.println("name9.equals(name10) :  "+name9.equals(name10));//true	               
 				System.out.println("name9.equals(name11) :  "+name9.equals(name11));//false	              
 				System.out.println("name10.equals(name11) : " +name10.equals(name11));//false	             
-				
 	}
-
 }
