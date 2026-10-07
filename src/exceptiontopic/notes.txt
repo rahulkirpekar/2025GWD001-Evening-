@@ -1,0 +1,63 @@
+Exception :- Abnormal Scenario---Code Crashed---JVM Abnormal Terminate
+-------------
+
+	Statement-----1
+	Statement-----2
+	Statement-----3
+	Statement-----4
+	Statement-----5
+	10 / 0-----------ArithmeticException--Code Crashed
+	Statement-----6
+	Statement-----7
+	Statement-----8
+	Statement-----9
+	Statement-----10
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+					Hierarchy of Exception
+					------------------------
+
+					Throwable(C)
+					  |
+					Exception(C)
+					  |
+					  |
+					  |
+		---------------------------------------------------------
+		|--checked--Compiletime--Compiler			|--UnChecked(Runtime---JVM)
+	    Exception(C)					RuntimeException(C)
+		|							|		
+	--IOException(C)		  		--ArithmeticException(C)		
+	--SQLException(C)				--NullpointerException(C)
+	--FileNotFOundException(C)			--ArrayIndexOutofBoundException(C)
+	--ClassNotFoundException(C)			--StringIndexOutofBoundException(C)
+	--...						--ClassCastException(C)
+							--NumberFormatException(C)
+							...
+
+
+
+
+
+
+
+
+			
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Handling:-  try..catch...finally
+--------------------
+
+	try
+	{
+		// code raise
+	}
+	catch(ArithmeticException e)
+	{
+		e.printStackTrace();
+	}
+	finally
+	{
+		
+	}

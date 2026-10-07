@@ -1,0 +1,86 @@
+Array Limitations:-
+--------------------
+
+	int a[] = new int[5];
+
+1. Fixed SIZE
+2. Fixed Data-TYPE
+
+
+
+Collection Framework:- To overcome Limitations of Array.
+-----------------------
+
+			Hierarchy of Collection [java.util.*]
+			------------------------
+
+
+				Iterable(I)--------------------------------------------------------------
+				   |									|
+				Collection(I)								|
+				   |									|
+				   |Data--value								|
+				   |									|
+	---------------------------------------------------------					|
+	|			   |				|					|
+       List(I)			Set(I)			     Queue(I)				     Map(I)-(Key,Value)	
+	|			   |				|					|
+AbstractList(AC)	    AbstractSet(AC)		 AbstractQueue(AC)			AbstractMap(AC)
+	|			   |				|					|
+--ArrayList(C)		--HashSet(C)			--PriorityQueue(C)			--HashMap(C)
+--Vector(C)		--LinkedHashSet(C)							--LinkedHashMap(C)
+--LinkedList(C)		--TreeSet(C)								--TreeMap(C)	
+
+
+
+		
+			
+
+List(I)	Features:-
+-----------------
+
+	==> Maintain Insertion Order
+	==> Allow Duplicate Values
+	==> Allow null values
+	==> Indexed Based Access
+	==> Random Access
+	==> ArrayList,LinkedList,Vector
+
+		
+
+
+
+
+
+
+
+
+	Primitive
+	DataType   Wrapper-class(Primitive type---class)
+	  |	    |
+	boolean--Boolean
+	byte-----Byte
+	char-----Character
+	short----Short
+	int------Integer
+	long-----Long
+	float----Float
+	double---Double
+
+	String-----String
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

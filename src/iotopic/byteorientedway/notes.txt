@@ -1,0 +1,80 @@
+IO(InputStream / OutputStream) :-
+----------------------------------
+
+	Stream - Buffer Area
+
+			Type of Stream
+			----------------
+	1. OutputStream		2.InputStream		3. ErrorStream(Error) 
+
+	System.out = Console
+
+	System.out.println("Hello World");// Console
+			
+			OutputStream(Write)
+	Program(Data)----------------------->Console/File/Socket
+
+
+	System.in = Console
+
+	Scanner sc= new Scanner(System.in);
+
+			InputStream(Read)
+	Program(Data)<------------------------Console/File/Socket
+
+
+	System.err.println("Hello World");// Error / exception log
+
+
+
+
+
+1. Byte Oriented way:-
+-----------------------
+
+	1. String
+		1. write(FileOutputStream)
+		2. read (FileInputStream)
+
+	2. Objects(User Defined Class)
+
+
+
+2.Character OrientedWay:-
+--------------------------
+
+	1. String
+		1. write(FileWriter)
+		2. read (FileReader)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
