@@ -1,0 +1,102 @@
+1. Statement
+
+	C--Create
+	R--Read
+	U--Update
+	D--Delete
+
+
+      affectedRowsCount				result--Multiple rows
+	      |					      |		
+   int executeUpdate()			ResultSet executeQuery()
+	      |				              |
+        --Insert				--select
+        --Update
+	--Delete
+
+
+
+
+
+2. PreparedStatement
+	C--Create
+	R--Read
+	U--Update
+	D--Delete
+
+3. CallableStatement
+
+
+
+
+
+
+Dao - Data Access Object
+---------------------------
+
+	Database
+	   |
+	Student
+
+
+StudentDao(Java class)--------->Student Table(MySQL)
+
+	1.insertStudent()
+	2.updateStudent()
+	3.deleteStudent()
+	4.getAllRecords()
+
+
+
+
+
+
+
+CREATE TABLE student
+(
+	rno int PRIMARY KEY AUTO_INCREMENT,
+	name varchar(50),
+	std int,
+	marks int
+);
+
+
+
+
+
+
+
+
+
+1. Statement
+
+	1.executeUpdate() (insert,update,delete)
+	2.executeQuery()  (select)
+
+
+2. PreparedStatement
+
+	1.executeUpdate() (insert,update,delete)
+	2.executeQuery()  (select)
+
+
+
+
+affectedRows--int	
+	  |
+	executeUpdate()		executeQuery()---ResultSet(Multiple Rows)
+	  |			  |
+	Insert			select
+	update
+	delete	
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+Thread--- process---> sub-processes
+--------
+	==> light weight
+
+
+
+Multi Threadding:-
+-----------------
+
+	 callstack(Execution Area)
+	      |	
+	      |			|--Threads
+	class-A---8-9--session(XYZ)		
+	class-B---8-9--session(Asir)
+	class-C---8-9--session(Bsir)
+	class-D---8-9--session(Csir)
+	class-E---8-9--session(Dsir)
+	
+Ways to create Thread in Java:-
+-------------------------------
+
+1. By extending Thread-class:-
+--------------------------------
+
+	Runnable(I)---run()--abstract method
+	   |
+	Thread(C)-----run()--implement---Task --NULL
+	   |
+	MyThread1---[overridde ---> run()  methods]
+
+
+class MyThread1 extends Thread
+{
+
+}
+
+
+
+
+2. By implementing Runnable Interface:-
+-----------------------------------------
+
+
+
+
+
+
+
+
+
+
+Thread Lifecycle:-
+------------------
+
+	1. START
+	     |
+	2. Runnable(Queue)<---------------------4. [Non-Runnable]	
+	     |						|
+	3. Running(run())---------->wait(),sleep()-------	
+	     |
+	5. Terminate(Delete Thread Object)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
