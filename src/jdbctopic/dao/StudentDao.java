@@ -1,8 +1,10 @@
 package jdbctopic.dao;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import jdbctopic.bean.StudentBean;
@@ -100,12 +102,64 @@ public class StudentDao
 		}
 		return rowsAffected;
 	}
-	public void getAllRecords() 
+	public ArrayList<StudentBean> getAllRecords() 
 	{
+		String selectQuery = "SELECT * FROM student";
+		
+		StudentBean sbean = null;
+		ArrayList<StudentBean> list = new ArrayList<StudentBean>();
+		Connection conn = DBConnection.getConnection();
+		Statement stmt = null;
+		ResultSet rs = null;
+		if (conn != null) 
+		{
+			try 
+			{
+				// create Statement object
+				stmt = conn.createStatement();
 
+				rs = stmt.executeQuery(selectQuery);
+				
+				while(rs.next()) 
+				{
+					int rno = rs.getInt(1);// rs.getInt("rno");
+					String name = rs.getString(2);
+					int std = rs.getInt(3);
+					int marks = rs.getInt(4);
+					
+//					System.out.println(rno+" " + name+" " + std+" " + marks);
+					
+					sbean = new StudentBean(rno, name, std, marks);
+					
+					list.add(sbean);
+				}
+			} catch (SQLException e) 
+			{
+				e.printStackTrace();
+			}
+		} else 
+		{
+			System.out.println("Db not connected :" + conn);
+		}
+		return list;
 	}
 	public static void main(String[] args) 
 	{
+		StudentDao studentDao = new StudentDao();
+		
+		ArrayList<StudentBean> list = studentDao.getAllRecords();
+		
+		for (int i = 0; i < list.size(); i++) 
+		{
+			StudentBean sbean = list.get(i);
+			
+			System.out.println(sbean.getRno()+" " + sbean.getName()+" " + sbean.getStd()+" " + sbean.getMarks());
+		}
+		
+		
+/*				
+   	//  -----------UPDATE Student --------------------	
+
 		Scanner sc= new Scanner(System.in);
 		
 		System.out.println("Ener Student Rno Which you want to Update  : ");
@@ -134,7 +188,7 @@ public class StudentDao
 		}
 		
 		
-/*				
+   	//  -----------DELETE Student --------------------	
 		System.out.println("Ener Student Rno Which you want to Delete  : ");
 		int rno = sc.nextInt();
 		
